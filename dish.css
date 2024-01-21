@@ -1,0 +1,72 @@
+/* 
+  Ce fichier contient une partie du css de la section Nos plats speciaux (les card)
+*/
+
+*,
+::after,
+::before {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   font-family: Roboto;
+}
+
+:root {
+   --color-gen: #808080;
+   --color-gen2: #736868e3;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: #7b7979;
+  line-height: 35px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 440px;
+  margin: 20px 0px;
+  padding: 0px 50px;
+}
+
+.cards .card {
+  flex: 1;
+  max-width: 380px;
+  min-width: 280px;
+  margin: 20px;
+  padding: 30px 10px;
+  border-radius: 30px;
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+.card p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #7b7979;
+}
+@media (max-width: 967px) {
+
+  .cards {
+    padding: 0px 6px;
+  }
+  .cards .card {
+    margin: 0px;
+    padding: 20px 6px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+}
+
+.cards .card:hover {
+  box-shadow: 0 0 20px rgba(34, 34, 34, 0.05);
+}
+
+.cards .card > img {
+  width: 55%;
+}
